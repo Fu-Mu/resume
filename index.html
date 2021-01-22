@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>个人简历</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="container" id="app">
+			<div class="row">
+				<div class="col-md-3" style="background-color: black; padding: 0%;">
+					<div  style="background-color: black;">
+					<div style="text-align: center;"><h1 style="color: white;">{{title}}</h1></div>
+					<div v-html="html" style="text-align: center;"></div>
+				    </div>
+				    <div style="text-align: center;"><h2 style="color: white;">{{name}}</h2></div>
+					<div style="background-color: lightskyblue; width: 100%; margin: 0%;padding: 1px">
+					<div style="text-align: center; margin: 1px; background: url(./img/个人简历.png) no-repeat left center; background-size: contain;"><h3 style="color: white; " >{{item1}}</h3></div></div>
+				    <div style="background-color: black; width: 100%; margin: 0%;padding: 1px;border-bottom:1px white solid ;">
+					<div style="text-align: center; margin: 1px; background: url(./img/时间.png) no-repeat left center; background-size: contain;"><h3 style="color: white; " >{{item2}}</h3></div></div>
+					<div style="background-color: black; width: 100%; margin: 0%;padding: 1px;border-bottom: 1px white solid ;">
+					<div style="text-align: center; margin: 1px; background: url(./img/学历.png) no-repeat left center; background-size: contain;"><h3 style="color: white; " >{{item3}}</h3></div></div>
+					<div style="background-color: black; width: 100%; margin: 0%;padding: 1px;border-bottom: 1px white solid ;">
+					<div style="text-align: center; margin: 1px; background: url(./img/籍贯.png) no-repeat left center; background-size: contain;"><h3 style="color: white; " >{{item4}}</h3></div></div>
+					<div style="background-color: black; width: 100%; margin: 0%;padding: 1px;border-bottom: 1px white solid ;">
+					<div style="text-align: center; margin: 1px; background: url(./img/绿叶.png) no-repeat left center; background-size: contain;"><h3 style="color: white; " >{{item5}}</h3></div></div>	
+					<div style="background-color: black; width: 100%; margin: 0%;padding: 1px;border-bottom: 1px white solid ;">
+					<div style="text-align: center; margin: 1px; background: url(./img/电\ 话.png) no-repeat left center; background-size: contain;"><h3 style="color: white; " >{{item6}}</h3></div></div>
+					<div style="background-color: black; width: 100%; margin: 0%;padding: 1px;border-bottom: 1px white solid ;">
+					<div style="text-align: center; margin: 1px; background: url(./img/邮件.png) no-repeat left center; background-size: contain;"><h3 style="color: white; " >{{item7}}</h3></div></div>	
+				</div>
+				<div class="col-md-7" style="margin: 0%; padding: 0%;">
+					<div style="background-color: gray; width: 100%; margin: 0%; padding: 1px;"> 
+					   <div style="background-color: white; width: 99%; margin: 2px; height: 99%;">
+						<div style="background: url(./img/搜索.png) no-repeat left center ; background-size: contain; text-align: center;"><h2>{{goal}}</h2></div>
+					   </div>
+					</div>
+					<div style="background-color: rgb(71, 71, 71);"><h2 style="color: white;">{{i1}}</h2></div>
+					</br>
+					</br>
+					</br>
+				    </br>
+					<div style="background-color: rgb(71, 71, 71);"><h2 style="color: white;">{{i2}}</h2></div>
+				</br>
+			</br>
+			</br>
+			</br>
+					<div style="background-color: rgb(71, 71, 71);"><h2 style="color: white;">{{i3}}</h2></div>
+				</br>
+			</br>
+			</br>
+			</br>
+					<div style="background-color: rgb(71, 71, 71);"><h2 style="color: white;">{{i4}}</h2></div>
+				</br>
+			</br>
+			</br>
+			</br>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var vm= new Vue({
+				el:'#app',
+				data:{
+					title:'个人简历',
+					html:'<img src="./img/th.jfif" alt="">',
+					name:'name/age',
+					item1:'姓名',
+					item2:'生日',
+					item3:'学历',
+					item4:'籍贯',
+					item5:'政治面貌',
+					item6:'电话',
+					item7:'邮件',
+					goal:'求职意向',
+					i1:'教育背景',
+					i2:'实习实践',
+					i3:'校内实践',
+					i4:'荣誉奖励'
+				}
+				
+			})
+		</script>
+	</body>
+</html>
